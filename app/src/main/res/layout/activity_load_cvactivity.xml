@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoadCVActivity"
+    android:orientation="vertical">
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/cv_load_hint"
+            style="@style/StaticMenuText"/>
+
+        <Button
+            android:id="@+id/cv_btn_choose_pdf"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:text="@string/cv_btn_choose_pdf" />
+
+        <TextView
+            android:id="@+id/cv_filename"
+            style="@style/PlainText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/cv_pdf_example" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/cv_btn_upload"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/cv_btn_upload" />
+
+        <Button
+            android:id="@+id/cv_btn_download"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/cv_btn_download" />
+
+        <Button
+            android:id="@+id/cv_btn_delete"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/cv_btn_delete" />
+    </LinearLayout>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/gray"/>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="StaticMenuText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="LoginMenuStyle">
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:layout_marginRight">45dp</item>
+    </style>
+
+    <style name="LoginMarginStyle">
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+    </style>
+
+    <style name="InputTextStyle" parent="LoginMarginStyle">
+        <item name="android:background">@color/light_blue</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_height">48sp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+    <style name="StaticLoginMenuText" parent="StaticMenuText">
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:layout_marginRight">35dp</item>
+    </style>
+
+    <style name="PlainText" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="ImportantText" parent="PlainText">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:layout_marginRight">45dp</item>
+    </style>
+
+    <!-- Окно выбора приоритетов -->
+    <style name="ResultPrioritiesStyle">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@color/lemon_yellow</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:minHeight">70dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="CompanyViewStyle">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <style name="PrioritiesPlainStaticText" parent="PlainText">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:background">@drawable/rounded_white_spinner</item>
+        <item name="android:spinnerMode">dialog</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+</resources>

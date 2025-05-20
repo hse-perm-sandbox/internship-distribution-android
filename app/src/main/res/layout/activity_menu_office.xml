@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuStudentActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_gravity="end">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/student_name"
+                style="@style/StaticMenuText"
+                android:gravity="center_vertical"/>
+
+            <!-- Сюда надо вставить иконку выхода из аккаунта-->
+            <Button
+                android:id="@+id/student_leave_btn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                style="@style/ButtonStyle"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/office_company_btn"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:text="@string/companies_btn" />
+
+        <Button
+            android:id="@+id/office_list_of_students"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            style="@style/ButtonStyle"
+            android:text="@string/list_of_students_btn"/>
+        <Button
+            android:id="@+id/office_results_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            style="@style/ButtonStyle"
+            android:text="@string/office_results_btn"/>
+        <Button
+            android:id="@+id/office_menu_settings_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="40dp"
+            style="@style/ButtonStyle"
+            android:text="@string/settings_btn"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
