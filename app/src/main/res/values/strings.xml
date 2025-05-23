@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">AppFormLayout</string>
+
+    <!-- Меню входа -->
+    <string name="welcome_message">
+        Добро пожаловать на платформу по подборке компании для практики</string>
+    <string name="login_tip">Логин</string>
+    <string name="password_tip">Пароль</string>
+    <string name="button_login">Войти</string>
+
+    <!-- Меню студента -->
+    <string name="student_name">Кукшинов Дмитрий</string>
+    <string name="companies_btn">Компании</string>
+    <string name="cv_btn">Загрузить резюме</string>
+    <string name="settings_btn">Настройки УЗ студентов</string>
+    <string name="office_results_btn">Результаты распределения</string>
+
+    <!-- Меню работника учебного офиса -->
+    <string name="worker_name">Карнаухова Екаетрина</string>
+    <string name="list_of_students_btn">Список студентов</string>
+    <string name="priorities_btn">Расставить приоритеты</string>
+    <string name="results_btn">Результаты распределения</string>
+
+    <!-- Меню просмотра компаний -->
+    <string name="choose_company_hint">Список доступных компаний:</string>
+    <string name="show_company_example">Компания 1</string>
+    <string name="show_company_description_example">Что-то про компанию.
+        ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам
+        ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам
+        ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам </string>
+    <string name="show_free_places_example">Количество свободных мест - 25</string>
+    <string-array name="company_vars_example">
+        <item>Гриндата</item>
+        <item>ПНППК</item>
+        <item>Юникорн</item>
+        <item>Смарт-аналитикс</item>
+        <item>ЭР-Телеком</item>
+    </string-array>
+
+    <!-- Меню выбора приоритетов компаний -->
+    <string name="priorities_results_btn">Не выбрано</string>
+    <string name="priorities_top_company">Комп. 1</string>
+    <string name="priorities_mid_company">Комп. 2</string>
+    <string name="priorities_low_company">Комп. 3</string>
+    <string name="priorities_choose_hint">Расставьте приоритеты компаниям</string>
+    <string name="priorities_save_changes">Сохранить</string>
+
+    <!-- Меню загрузки резюме -->
+    <string name="cv_load_hint">Управление резюме</string>
+    <string name="cv_btn_choose_pdf">Выбрать PDF-файл</string>
+    <string name="cv_pdf_example">Кукшинов_Дмитрий_Александрович_резюме.pdf</string>
+    <string name="cv_btn_upload">Загрузить</string>
+    <string name="cv_btn_download">Скачать резюме</string>
+    <string name="cv_btn_delete">Удалить резюме</string>
+</resources>
