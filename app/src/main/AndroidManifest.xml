@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AppFormLayout"
         tools:targetApi="31">
         <activity
+            android:name=".OfficeViewCompaniesActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuOfficeActivity"
             android:exported="false" />
         <activity
