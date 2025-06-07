@@ -95,4 +95,21 @@
         <item name="android:paddingLeft">12dp</item>
         <item name="android:paddingRight">12dp</item>
     </style>
+
+    <!-- Стиль для текста обычных строк в таблице студентов -->
+    <style name="PlainStudentsTableText" parent="PlainText">
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <!-- Стиль для текста заголовков в таблице студентов -->
+    <style name="HeaderStudentsTableText" parent="StaticMenuText">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Стиль для названия таблицы студентов -->
+    <style name="TitleStudentsTableText" parent="StaticMenuText">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
 </resources>
