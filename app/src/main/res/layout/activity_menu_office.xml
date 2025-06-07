@@ -31,7 +31,7 @@
 
             <!-- Сюда надо вставить иконку выхода из аккаунта-->
             <Button
-                android:id="@+id/student_leave_btn"
+                android:id="@+id/worker_leave_btn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 style="@style/ButtonStyle"
@@ -57,14 +57,6 @@
             android:layout_marginTop="40dp"
             style="@style/ButtonStyle"
             android:text="@string/list_of_students_btn"/>
-        <Button
-            android:id="@+id/office_results_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="40dp"
-            style="@style/ButtonStyle"
-            android:text="@string/office_results_btn"/>
         <Button
             android:id="@+id/office_menu_settings_btn"
             android:layout_width="match_parent"

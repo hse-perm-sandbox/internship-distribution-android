@@ -73,4 +73,14 @@
         <item>Приглашение</item>
         <item>В работе</item>
     </string-array>
+
+    <!-- Меню управления учетными записями студентов -->
+    <string name="change_account_btn">Сохранить изменения</string>
+    <string name="add_account_btn">Добавить</string>
+    <string name="delete_account_btn">Удалить</string>
+    <string name="account_table_title">Таблица учетных записей</string>
+    <string name="account_form_login">Логин:</string>
+    <string name="account_form_password">Пароль:</string>
+    <string name="account_form_name_of_student">ФИО:</string>
+    <string name="account_form_group_of_student">Группа:</string>
 </resources>

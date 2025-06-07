@@ -30,7 +30,9 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:shrinkColumns="*"
-            android:stretchColumns="*">
+            android:stretchColumns="*"
+            android:divider="@drawable/row_divider"
+            android:showDividers="beginning|middle|end">
 
             <TableRow>
 

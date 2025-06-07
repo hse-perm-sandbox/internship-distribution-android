@@ -63,14 +63,6 @@
             android:layout_marginTop="40dp"
             style="@style/ButtonStyle"
             android:text="@string/priorities_btn"/>
-        <Button
-            android:id="@+id/student_results_btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="40dp"
-            style="@style/ButtonStyle"
-            android:text="@string/results_btn"/>
         <Space
             android:layout_width="match_parent"
             android:layout_weight="3"

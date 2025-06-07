@@ -96,20 +96,40 @@
         <item name="android:paddingRight">12dp</item>
     </style>
 
-    <!-- Стиль для текста обычных строк в таблице студентов -->
+    <!-- Стиль для текста обычных строк в таблицах студентов и аккаунтов -->
     <style name="PlainStudentsTableText" parent="PlainText">
         <item name="android:layout_marginLeft">0dp</item>
         <item name="android:layout_marginRight">0dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
     </style>
 
-    <!-- Стиль для текста заголовков в таблице студентов -->
+    <!-- Стиль для текста заголовков в таблицах студентов и аккаунтов -->
     <style name="HeaderStudentsTableText" parent="StaticMenuText">
         <item name="android:textSize">18sp</item>
     </style>
 
-    <!-- Стиль для названия таблицы студентов -->
+    <!-- Стиль для названия в таблицах студентов и аккаунтов -->
     <style name="TitleStudentsTableText" parent="StaticMenuText">
         <item name="android:textSize">30sp</item>
         <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- Стиль для кнопкой у таблицы аккаунтов -->
+    <style name="AccountButtonStyle" parent="ButtonStyle">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <!-- Стиль для полей ввода у таблицы аккаунтов -->
+    <style name="EditTextAccountTable">
+        <item name="android:background">@drawable/edittext_gray_background</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:inputType">text</item>
     </style>
 </resources>

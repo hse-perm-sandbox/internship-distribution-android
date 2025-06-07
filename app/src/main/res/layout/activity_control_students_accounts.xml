@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlStudentsAccountsActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="@string/students_table_title"
+        style="@style/TitleStudentsTableText"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/table_accounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:divider="@drawable/row_divider"
+            android:showDividers="beginning|middle|end">>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/HeaderStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="@string/students_table_column_name_of_student" />
+
+                <TextView
+                    style="@style/HeaderStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="@string/students_table_column_group_of_student" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/PlainStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="Студент 1" />
+
+                <TextView
+                    style="@style/PlainStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="Группа 1" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/PlainStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="Студент 2" />
+
+                <TextView
+                    style="@style/PlainStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="Группа 2" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/PlainStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="Студент 3" />
+
+                <TextView
+                    style="@style/PlainStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="Группа 1" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/PlainStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="Студент 4" />
+
+                <TextView
+                    style="@style/PlainStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="Группа 3" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/PlainStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="Студент 5" />
+
+                <TextView
+                    style="@style/PlainStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="Группа 1" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/PlainStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="Студент 6" />
+
+                <TextView
+                    style="@style/PlainStudentsTableText"
+                    android:layout_weight="1"
+                    android:text="Группа 2" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    style="@style/TitleStudentsTableText"
+                    android:text="@string/account_form_login"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/login_edit_form"
+                    style="@style/EditTextAccountTable"
+                    android:layout_weight="2" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/TitleStudentsTableText"
+                    android:text="@string/account_form_password"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/password_edit_form"
+                    style="@style/EditTextAccountTable"
+                    android:layout_weight="2"
+                    tools:ignore="TextFields" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/TitleStudentsTableText"
+                    android:text="@string/account_form_name_of_student"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/name_of_student_edit_form"
+                    style="@style/EditTextAccountTable"
+                    android:layout_weight="2" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    style="@style/TitleStudentsTableText"
+                    android:text="@string/account_form_group_of_student"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/group_of_student_edit_form"
+                    style="@style/EditTextAccountTable"
+                    android:layout_weight="2" />
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/change_account_btn"
+                    android:text="@string/change_account_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/AccountButtonStyle"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/add_account_btn"
+                    style="@style/AccountButtonStyle"
+                    android:text="@string/add_account_btn"/>
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/delete_account_btn"
+                    style="@style/AccountButtonStyle"
+                    android:text="@string/delete_account_btn"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>
