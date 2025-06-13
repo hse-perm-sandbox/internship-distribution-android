@@ -52,4 +52,35 @@
     <string name="cv_btn_upload">Загрузить</string>
     <string name="cv_btn_download">Скачать резюме</string>
     <string name="cv_btn_delete">Удалить резюме</string>
+
+    <!-- Меню просмотра компаний от лица работника учебного офиса -->
+    <string name="company_save_changes_btn">Сохранить изменения</string>
+    <string name="company_add_btn">Добавить компанию</string>
+    <string name="company_delete_btn">Удалить компанию</string>
+
+    <!-- Меню таблицы студентов -->
+    <string name="students_table_title">Таблица студентов</string>
+    <string name="students_table_column_name_of_student">ФИО</string>
+    <string name="students_table_column_group_of_student">Группа</string>
+    <string name="students_table_column_priority_of_student">Приоритет</string>
+    <string name="students_table_column_company">Компания</string>
+    <string name="students_table_download_cv">Скачать</string>
+    <string name="students_table_status_title">Компания</string>
+    <string-array name="students_table_status">
+        <item>Не выбрано</item>
+        <item>Направлено</item>
+        <item>Отказ</item>
+        <item>Приглашение</item>
+        <item>В работе</item>
+    </string-array>
+
+    <!-- Меню управления учетными записями студентов -->
+    <string name="change_account_btn">Сохранить изменения</string>
+    <string name="add_account_btn">Добавить</string>
+    <string name="delete_account_btn">Удалить</string>
+    <string name="account_table_title">Таблица учетных записей</string>
+    <string name="account_form_login">Логин:</string>
+    <string name="account_form_password">Пароль:</string>
+    <string name="account_form_name_of_student">ФИО:</string>
+    <string name="account_form_group_of_student">Группа:</string>
 </resources>

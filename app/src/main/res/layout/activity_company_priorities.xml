@@ -35,7 +35,7 @@
             android:id="@+id/priorities_spinner_top"
             style="@style/SpinnerStyle"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_weight="2" />
 
         <TextView
@@ -63,7 +63,7 @@
             android:id="@+id/priorities_spinner_mid"
             style="@style/SpinnerStyle"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_weight="2" />
 
         <TextView
@@ -91,7 +91,7 @@
             android:id="@+id/priorities_spinner_low"
             style="@style/SpinnerStyle"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_weight="2" />
 
         <TextView

@@ -17,7 +17,6 @@ public class MenuStudentActivity extends AppCompatActivity {
     Button companyBtn;
     Button uploadCvBtn;
     Button prioritesBtn;
-    Button resultsBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,9 +35,6 @@ public class MenuStudentActivity extends AppCompatActivity {
 
         // Кнопка расстановки приоритетов
         prioritesBtn = findViewById(R.id.student_priorities_btn);
-
-        // Кнопка показа результата (? можно посмотреть в расстановке приоритетов)
-        resultsBtn = findViewById(R.id.student_results_btn);
 
         companyBtn.setOnClickListener(new View.OnClickListener() {
 
