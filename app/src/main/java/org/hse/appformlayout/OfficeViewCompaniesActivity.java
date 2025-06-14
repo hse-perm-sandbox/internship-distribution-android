@@ -1,6 +1,7 @@
 package org.hse.appformlayout;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -26,18 +27,27 @@ public class OfficeViewCompaniesActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_office_view_companies);
 
-        // Спиннер с компаниями, по которым студент может посмотреть информацию
+        // Спиннер с компаниями
         companiesSpinner = findViewById(R.id.office_spinner_companies);
 
         // Название и информация о компании
         viewCompanyName = findViewById(R.id.office_view_company_name);
         viewCompanyDescription = findViewById(R.id.office_view_company_description);
 
-        // Кнопка перехода к выборам приоритетов компаний,
-        // куда студент хочет отправить заявку на практику
+        // Кнопки управления компаниями
         addCompanyBtn = findViewById(R.id.company_add_btn);
         deleteCompanyBtn = findViewById(R.id.company_delete_btn);
         saveChangesBtn = findViewById(R.id.company_save_changes_btn);
+
+        // --- Добавлено: настройка спиннера компаний ---
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                this,
+                R.layout.companies_spinner_item,
+                getResources().getStringArray(R.array.company_vars_example)
+        );
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_items);
+        companiesSpinner.setAdapter(adapter);
+        // --- Конец добавленного ---
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
