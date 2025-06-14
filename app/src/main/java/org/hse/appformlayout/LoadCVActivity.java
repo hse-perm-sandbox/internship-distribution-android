@@ -31,7 +31,7 @@ public class LoadCVActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_load_cvactivity);
+        setContentView(R.layout.activity_load_cv_activity);
 
         // Инициализация кнопок и текстового поля по id из layout
         choosePdfBtn = findViewById(R.id.cv_btn_choose_pdf);
