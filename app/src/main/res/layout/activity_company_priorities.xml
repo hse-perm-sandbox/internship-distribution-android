@@ -23,7 +23,8 @@
         android:layout_height="0dp"
         android:layout_weight="2"
         android:orientation="horizontal"
-        style="@style/CompanyViewStyle">
+        style="@style/CompanyViewStyle"
+        android:gravity="center_vertical">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -40,18 +41,20 @@
 
         <TextView
             android:id="@+id/priorities_status_top"
-            style="@style/ResultPrioritiesStyle"
+            style="@style/OvalStatusStyle"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/priorities_results_btn" />
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/status_not_selected" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
         android:orientation="horizontal"
-        style="@style/CompanyViewStyle">
+        style="@style/CompanyViewStyle"
+        android:gravity="center_vertical">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -68,18 +71,20 @@
 
         <TextView
             android:id="@+id/prioties_status_mid"
-            style="@style/ResultPrioritiesStyle"
+            style="@style/OvalStatusStyle"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/priorities_results_btn" />
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/status_not_selected" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
         android:orientation="horizontal"
-        style="@style/CompanyViewStyle">
+        style="@style/CompanyViewStyle"
+        android:gravity="center_vertical">
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -96,11 +101,12 @@
 
         <TextView
             android:id="@+id/priorities_status_low"
-            style="@style/ResultPrioritiesStyle"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/priorities_results_btn" />
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            style="@style/OvalStatusStyle"
+            android:gravity="center"
+            android:text="@string/status_not_selected" />
     </LinearLayout>
 
     <Button

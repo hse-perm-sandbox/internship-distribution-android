@@ -84,4 +84,10 @@
     <string name="office_enter_company_name">Введите название компании...</string>
     <string name="office_enter_company_description">Введите описание компании...</string>
     <string name="new_company">Новая компания</string>
+
+    <!-- Статусы компаний -->
+    <string name="status_sent">Направлено</string>
+    <string name="status_not_selected">Не выбрано</string>
+    <string name="status_label_sent">Статус: Направлено</string>
+    <string name="status_label_not_selected">Статус: Не выбрано</string>
 </resources>
