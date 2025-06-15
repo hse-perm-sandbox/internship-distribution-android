@@ -39,11 +39,6 @@
                     style="@style/HeaderStudentsTableText"
                     android:layout_weight="1"
                     android:text="@string/students_table_column_name_of_student" />
-
-                <TextView
-                    style="@style/HeaderStudentsTableText"
-                    android:layout_weight="1"
-                    android:text="@string/students_table_column_group_of_student" />
             </TableRow>
 
             <TableRow>
@@ -52,11 +47,6 @@
                     style="@style/PlainStudentsTableText"
                     android:layout_weight="1"
                     android:text="Студент 1" />
-
-                <TextView
-                    style="@style/PlainStudentsTableText"
-                    android:layout_weight="1"
-                    android:text="Группа 1" />
             </TableRow>
 
             <TableRow>
@@ -65,11 +55,6 @@
                     style="@style/PlainStudentsTableText"
                     android:layout_weight="1"
                     android:text="Студент 2" />
-
-                <TextView
-                    style="@style/PlainStudentsTableText"
-                    android:layout_weight="1"
-                    android:text="Группа 2" />
             </TableRow>
 
             <TableRow>
@@ -78,11 +63,6 @@
                     style="@style/PlainStudentsTableText"
                     android:layout_weight="1"
                     android:text="Студент 3" />
-
-                <TextView
-                    style="@style/PlainStudentsTableText"
-                    android:layout_weight="1"
-                    android:text="Группа 1" />
             </TableRow>
 
             <TableRow>
@@ -91,11 +71,6 @@
                     style="@style/PlainStudentsTableText"
                     android:layout_weight="1"
                     android:text="Студент 4" />
-
-                <TextView
-                    style="@style/PlainStudentsTableText"
-                    android:layout_weight="1"
-                    android:text="Группа 3" />
             </TableRow>
 
             <TableRow>
@@ -104,11 +79,6 @@
                     style="@style/PlainStudentsTableText"
                     android:layout_weight="1"
                     android:text="Студент 5" />
-
-                <TextView
-                    style="@style/PlainStudentsTableText"
-                    android:layout_weight="1"
-                    android:text="Группа 1" />
             </TableRow>
 
             <TableRow>
@@ -117,11 +87,6 @@
                     style="@style/PlainStudentsTableText"
                     android:layout_weight="1"
                     android:text="Студент 6" />
-
-                <TextView
-                    style="@style/PlainStudentsTableText"
-                    android:layout_weight="1"
-                    android:text="Группа 2" />
             </TableRow>
         </TableLayout>
     </ScrollView>
@@ -141,7 +106,6 @@
                     style="@style/TitleStudentsTableText"
                     android:text="@string/account_form_login"
                     android:layout_weight="1"/>
-
                 <EditText
                     android:id="@+id/login_edit_form"
                     style="@style/EditTextAccountTable"
@@ -152,7 +116,6 @@
                     style="@style/TitleStudentsTableText"
                     android:text="@string/account_form_password"
                     android:layout_weight="1"/>
-
                 <EditText
                     android:id="@+id/password_edit_form"
                     style="@style/EditTextAccountTable"
@@ -164,20 +127,8 @@
                     style="@style/TitleStudentsTableText"
                     android:text="@string/account_form_name_of_student"
                     android:layout_weight="1"/>
-
                 <EditText
                     android:id="@+id/name_of_student_edit_form"
-                    style="@style/EditTextAccountTable"
-                    android:layout_weight="2" />
-            </TableRow>
-            <TableRow>
-                <TextView
-                    style="@style/TitleStudentsTableText"
-                    android:text="@string/account_form_group_of_student"
-                    android:layout_weight="1"/>
-
-                <EditText
-                    android:id="@+id/group_of_student_edit_form"
                     style="@style/EditTextAccountTable"
                     android:layout_weight="2" />
             </TableRow>
