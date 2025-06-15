@@ -70,13 +70,6 @@
             android:layout_weight="5"
             android:text="@string/show_company_description_example" />
 
-        <TextView
-            android:id="@+id/office_view_company_vacancies"
-            style="@style/ImportantText"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="@string/show_free_places_example" />
 
         <Button
             android:id="@+id/company_save_changes_btn"
