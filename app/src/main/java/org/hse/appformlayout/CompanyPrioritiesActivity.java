@@ -54,5 +54,26 @@ public class CompanyPrioritiesActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        saveBtn.setOnClickListener(v -> {
+            int green = android.graphics.Color.parseColor("#388E3C");
+            int white = android.graphics.Color.WHITE;
+            int radius = 50; // радиус для овала
+            // Меняем статус, фон и текст
+            statusTop.setText(getString(R.string.status_sent));
+            statusTop.setBackgroundResource(R.drawable.oval_status_background);
+            statusTop.setTextColor(white);
+            statusTop.getBackground().setTint(green);
+
+            statusMid.setText(getString(R.string.status_sent));
+            statusMid.setBackgroundResource(R.drawable.oval_status_background);
+            statusMid.setTextColor(white);
+            statusMid.getBackground().setTint(green);
+
+            statusLow.setText(getString(R.string.status_sent));
+            statusLow.setBackgroundResource(R.drawable.oval_status_background);
+            statusLow.setTextColor(white);
+            statusLow.getBackground().setTint(green);
+        });
     }
 }

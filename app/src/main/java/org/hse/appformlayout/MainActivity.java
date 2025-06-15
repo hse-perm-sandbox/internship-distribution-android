@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,11 +32,25 @@ public class MainActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.main_loginButton);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MenuStudentActivity.class);
-                startActivity(intent);
+                String loginText = login.getText().toString().trim();
+                String passwordText = password.getText().toString().trim();
+
+                // Заглушка для студента
+                if (loginText.equals("student") && passwordText.equals("1111")) {
+                    Intent intent = new Intent(MainActivity.this, MenuStudentActivity.class);
+                    startActivity(intent);
+                }
+                // Заглушка для сотрудника офиса
+                else if (loginText.equals("office") && passwordText.equals("1111")) {
+                    Intent intent = new Intent(MainActivity.this, MenuOfficeActivity.class);
+                    startActivity(intent);
+                }
+                // Если данные не совпадают ни с одним вариантом
+                else {
+                    Toast.makeText(MainActivity.this, "Неверный логин или пароль", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

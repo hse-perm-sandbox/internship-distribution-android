@@ -20,6 +20,11 @@
         <item name="android:textAllCaps">false</item>
     </style>
 
+    <style name="ButtonStyle.Disabled" parent="ButtonStyle">
+        <item name="android:background">#CCCCCC</item>
+        <item name="android:textColor">#888888</item>
+    </style>
+
     <style name="LoginMenuStyle">
         <item name="android:layout_marginLeft">45dp</item>
         <item name="android:layout_marginRight">45dp</item>
@@ -131,5 +136,28 @@
         <item name="android:layout_margin">4dp</item>
         <item name="android:minHeight">48dp</item>
         <item name="android:inputType">text</item>
+    </style>
+
+    <style name="SelectedTableRowStyle">
+        <item name="android:background">@color/lemon_yellow</item>
+    </style>
+
+    <style name="StatusSentStyle" parent="ResultPrioritiesStyle">
+        <item name="android:textColor">#388E3C</item> <!-- зеленый -->
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="StatusNotSelectedStyle" parent="ResultPrioritiesStyle">
+        <item name="android:textColor">#888888</item> <!-- серый -->
+    </style>
+
+    <style name="OvalStatusStyle">
+        <item name="android:background">@drawable/oval_status_background</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>

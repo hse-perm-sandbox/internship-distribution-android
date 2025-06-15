@@ -44,6 +44,20 @@ public class ViewCompaniesActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(R.layout.spinner_dropdown_items);
         companiesSpinner.setAdapter(adapter);
 
+        // Обновление названия компании при выборе из списка
+        companiesSpinner.setOnItemSelectedListener(new android.widget.AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(android.widget.AdapterView<?> parent, android.view.View view, int position, long id) {
+                String selectedCompany = (String) parent.getItemAtPosition(position);
+                viewCompanyName.setText(selectedCompany);
+            }
+
+            @Override
+            public void onNothingSelected(android.widget.AdapterView<?> parent) {
+                // ничего не делаем
+            }
+        });
+
         prioritiesBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override

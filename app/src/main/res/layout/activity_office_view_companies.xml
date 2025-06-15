@@ -53,30 +53,25 @@
         android:layout_height="0dp"
         android:layout_weight="4">
 
-        <TextView
+        <EditText
             android:id="@+id/office_view_company_name"
             style="@style/StaticMenuText"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/show_company_example"
+            android:hint="@string/office_enter_company_name"
+            android:textColorHint="#888888"
             android:textSize="24sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/office_view_company_description"
             style="@style/PlainText"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="5"
-            android:text="@string/show_company_description_example" />
+            android:hint="@string/office_enter_company_description"
+            android:textColorHint="#888888" />
 
-        <TextView
-            android:id="@+id/office_view_company_vacancies"
-            style="@style/ImportantText"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="@string/show_free_places_example" />
 
         <Button
             android:id="@+id/company_save_changes_btn"

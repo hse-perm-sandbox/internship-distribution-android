@@ -31,7 +31,6 @@ public class ControlStudentsAccountsActivity extends AppCompatActivity {
         loginForm = findViewById(R.id.login_edit_form);
         passwordForm = findViewById(R.id.password_edit_form);
         studentNameForm = findViewById(R.id.name_of_student_edit_form);
-        studentGroupForm = findViewById(R.id.group_of_student_edit_form);
 
         saveChangesBtn = findViewById(R.id.change_account_btn);
         addAccountBtn = findViewById(R.id.add_account_btn);

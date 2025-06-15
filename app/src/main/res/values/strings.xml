@@ -61,7 +61,6 @@
     <!-- Меню таблицы студентов -->
     <string name="students_table_title">Таблица студентов</string>
     <string name="students_table_column_name_of_student">ФИО</string>
-    <string name="students_table_column_group_of_student">Группа</string>
     <string name="students_table_column_priority_of_student">Приоритет</string>
     <string name="students_table_column_company">Компания</string>
     <string name="students_table_download_cv">Скачать</string>
@@ -82,5 +81,13 @@
     <string name="account_form_login">Логин:</string>
     <string name="account_form_password">Пароль:</string>
     <string name="account_form_name_of_student">ФИО:</string>
-    <string name="account_form_group_of_student">Группа:</string>
+    <string name="office_enter_company_name">Введите название компании...</string>
+    <string name="office_enter_company_description">Введите описание компании...</string>
+    <string name="new_company">Новая компания</string>
+
+    <!-- Статусы компаний -->
+    <string name="status_sent">Направлено</string>
+    <string name="status_not_selected">Не выбрано</string>
+    <string name="status_label_sent">Статус: Направлено</string>
+    <string name="status_label_not_selected">Статус: Не выбрано</string>
 </resources>
