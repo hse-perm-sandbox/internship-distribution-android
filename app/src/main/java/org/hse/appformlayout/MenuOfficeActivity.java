@@ -63,7 +63,14 @@ public class MenuOfficeActivity extends AppCompatActivity {
             }
         });
 
-        // Кнопка настроек пока не реализована
+        // Переход к управлению аккаунтами студентов
+        menuSettingsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuOfficeActivity.this, ControlStudentsAccountsActivity.class);
+                startActivity(intent);
+            }
+        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
