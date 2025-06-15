@@ -169,11 +169,12 @@
 
         <Button
             android:id="@+id/table_students_download_cv_btn"
-            style="@style/ButtonStyle"
+            style="@style/ButtonStyle.Disabled"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="1"
-            android:text="@string/students_table_download_cv" />
+            android:text="@string/students_table_download_cv"
+            android:enabled="false" />
 
         <Spinner
             android:id="@+id/students_table_spinner_status"
