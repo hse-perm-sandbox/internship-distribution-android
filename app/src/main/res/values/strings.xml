@@ -81,4 +81,7 @@
     <string name="account_form_login">Логин:</string>
     <string name="account_form_password">Пароль:</string>
     <string name="account_form_name_of_student">ФИО:</string>
+    <string name="office_enter_company_name">Введите название компании...</string>
+    <string name="office_enter_company_description">Введите описание компании...</string>
+    <string name="new_company">Новая компания</string>
 </resources>

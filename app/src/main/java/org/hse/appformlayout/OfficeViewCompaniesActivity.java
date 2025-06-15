@@ -1,10 +1,11 @@
 package org.hse.appformlayout;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,8 +16,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class OfficeViewCompaniesActivity extends AppCompatActivity {
 
     Spinner companiesSpinner;
-    TextView viewCompanyName;
-    TextView viewCompanyDescription;
+    EditText viewCompanyName;
+    EditText viewCompanyDescription;
     Button addCompanyBtn;
     Button deleteCompanyBtn;
     Button saveChangesBtn;
@@ -40,10 +41,11 @@ public class OfficeViewCompaniesActivity extends AppCompatActivity {
         saveChangesBtn = findViewById(R.id.company_save_changes_btn);
 
         // --- Добавлено: настройка спиннера компаний ---
+        java.util.List<String> companiesList = new java.util.ArrayList<>(java.util.Arrays.asList(getResources().getStringArray(R.array.company_vars_example)));
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this,
                 R.layout.companies_spinner_item,
-                getResources().getStringArray(R.array.company_vars_example)
+                companiesList
         );
         adapter.setDropDownViewResource(R.layout.spinner_dropdown_items);
         companiesSpinner.setAdapter(adapter);
@@ -60,6 +62,32 @@ public class OfficeViewCompaniesActivity extends AppCompatActivity {
             @Override
             public void onNothingSelected(android.widget.AdapterView<?> parent) {
                 // ничего не делаем
+            }
+        });
+
+        addCompanyBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Добавляем "Новая компания" в адаптер, если её ещё нет
+                ArrayAdapter<String> adapter = (ArrayAdapter<String>) companiesSpinner.getAdapter();
+                String newCompany = getString(R.string.new_company);
+                boolean hasNewCompany = false;
+                for (int i = 0; i < adapter.getCount(); i++) {
+                    if (adapter.getItem(i).equals(newCompany)) {
+                        hasNewCompany = true;
+                        break;
+                    }
+                }
+                if (!hasNewCompany) {
+                    adapter.add(newCompany);
+                }
+                companiesSpinner.setSelection(adapter.getPosition(newCompany));
+                viewCompanyName.setText("");
+                viewCompanyDescription.setText("");
+                viewCompanyName.setHint(newCompany);
+                viewCompanyDescription.setHint(getString(R.string.office_enter_company_description));
+                viewCompanyName.setEnabled(true);
+                viewCompanyDescription.setEnabled(true);
             }
         });
 
