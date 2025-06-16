@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">AppFormLayout</string>
+    <string name="preferences_file">internship-distribution-android.file</string>
+
 
     <!-- Меню входа -->
     <string name="welcome_message">
@@ -16,7 +18,7 @@
     <string name="office_results_btn">Результаты распределения</string>
 
     <!-- Меню работника учебного офиса -->
-    <string name="worker_name">Карнаухова Екаетрина</string>
+    <string name="worker_name">Менеджер</string>
     <string name="list_of_students_btn">Список студентов</string>
     <string name="priorities_btn">Расставить приоритеты</string>
     <string name="results_btn">Результаты распределения</string>
