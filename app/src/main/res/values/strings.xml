@@ -26,10 +26,7 @@
     <!-- Меню просмотра компаний -->
     <string name="choose_company_hint">Список доступных компаний:</string>
     <string name="show_company_example">Компания 1</string>
-    <string name="show_company_description_example">Что-то про компанию.
-        ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам
-        ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам
-        ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам ПамПамПам </string>
+    <string name="show_company_description_example"> </string>
     <string name="show_free_places_example">Количество свободных мест - 25</string>
     <string-array name="company_vars_example">
         <item>Гриндата</item>
@@ -50,7 +47,7 @@
     <!-- Меню загрузки резюме -->
     <string name="cv_load_hint">Управление резюме</string>
     <string name="cv_btn_choose_pdf">Выбрать PDF-файл</string>
-    <string name="cv_pdf_example">Кукшинов_Дмитрий_Александрович_резюме.pdf</string>
+    <string name="cv_pdf_example">Пока ничего не выбрано</string>
     <string name="cv_btn_upload">Загрузить</string>
     <string name="cv_btn_download">Скачать резюме</string>
     <string name="cv_btn_delete">Удалить резюме</string>
@@ -92,4 +89,7 @@
     <string name="status_not_selected">Не выбрано</string>
     <string name="status_label_sent">Статус: Направлено</string>
     <string name="status_label_not_selected">Статус: Не выбрано</string>
+    <string name="toSettings">В настройки</string>
+    <string name="writeStoragePermissionRationale">Для сохранения резюме необходимо дать разрешение на запись файлов!</string>
+    <string name="writeStoragePermissionRationaleAfterNeverAskAgain">Для сохранения резюме необходимо дать разрешение на запись файлов, это можно сделать в настройках!</string>
 </resources>
