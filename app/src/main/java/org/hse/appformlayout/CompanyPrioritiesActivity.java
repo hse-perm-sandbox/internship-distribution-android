@@ -211,7 +211,7 @@ public class CompanyPrioritiesActivity extends AppCompatActivity {
         }
         catch (Exception ex)
         {
-            return;
+
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -347,8 +347,24 @@ public class CompanyPrioritiesActivity extends AppCompatActivity {
             Request request1=requestBuilder1.patch(body).build();
             Call call1=client.newCall(request1);
             try (Response response = call1.execute()){
+                //Еще не посланы приоритеты
+                if(response.code()==404)
+                {
+
+                    String stringRB2="{\"studentId\":"+curStudId+",\"priority1CompanyId\":"+
+                            companiesIds.get(companiesTop.getSelectedItemPosition()).toString()+",\"priority2CompanyId\":"+
+                            companiesIds.get(companiesMid.getSelectedItemPosition()).toString()+",\"priority3CompanyId\":"+
+                            companiesIds.get(companiesLow.getSelectedItemPosition()).toString()+"}";
+                    RequestBody body2 = RequestBody.create(JSON, stringRB2);
+                    Request.Builder requestBuilder2=new Request.Builder().url(
+                            "https://internship-distribution.hse-perm.ru/api/applications/")
+                            .addHeader("Authorization", authString);
+                    Request request2=requestBuilder2.post(body2).build();
+                    Call call2=client.newCall(request2);
+                    call2.execute();
+                }
                 //Какая-то ошибка
-                if (!response.isSuccessful()) {
+                else if (!response.isSuccessful()) {
                     throw new IOException("Запрос к серверу не был успешен: " +
                             response.code() + " " + response.message());
                 }

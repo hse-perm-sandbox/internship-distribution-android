@@ -77,7 +77,7 @@
     <string name="add_account_btn">Добавить</string>
     <string name="delete_account_btn">Удалить</string>
     <string name="account_table_title">Таблица учетных записей</string>
-    <string name="account_form_login">Логин:</string>
+    <string name="account_form_login">Логин(почта):</string>
     <string name="account_form_password">Пароль:</string>
     <string name="account_form_name_of_student">ФИО:</string>
     <string name="office_enter_company_name">Введите название компании...</string>

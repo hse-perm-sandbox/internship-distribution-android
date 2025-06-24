@@ -106,6 +106,7 @@
         <item name="android:layout_marginLeft">0dp</item>
         <item name="android:layout_marginRight">0dp</item>
         <item name="android:maxLines">1</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:ellipsize">end</item>
     </style>
 
