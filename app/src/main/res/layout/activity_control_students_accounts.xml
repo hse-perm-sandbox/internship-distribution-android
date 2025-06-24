@@ -7,16 +7,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ControlStudentsAccountsActivity">
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="30dp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.5"
         android:text="@string/students_table_title"
         style="@style/TitleStudentsTableText"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="4"
+        android:layout_weight="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,10 +33,10 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:shrinkColumns="*"
-            android:stretchColumns="*"
             android:divider="@drawable/row_divider"
-            android:showDividers="beginning|middle|end">>
+            android:showDividers="beginning|middle|end"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">>
 
             <TableRow>
 
@@ -114,10 +119,10 @@
             <TableRow>
                 <TextView
                     style="@style/TitleStudentsTableText"
-                    android:text="@string/account_form_password"
+                    android:text="Имя"
                     android:layout_weight="1"/>
                 <EditText
-                    android:id="@+id/password_edit_form"
+                    android:id="@+id/name_edit_form"
                     style="@style/EditTextAccountTable"
                     android:layout_weight="2"
                     tools:ignore="TextFields" />
@@ -125,23 +130,24 @@
             <TableRow>
                 <TextView
                     style="@style/TitleStudentsTableText"
-                    android:text="@string/account_form_name_of_student"
+                    android:text="Фамилия:"
                     android:layout_weight="1"/>
                 <EditText
-                    android:id="@+id/name_of_student_edit_form"
+                    android:id="@+id/lastname_edit_form"
                     style="@style/EditTextAccountTable"
-                    android:layout_weight="2" />
+                    android:layout_weight="2"
+                    tools:ignore="TextFields" />
             </TableRow>
             <TableRow>
-                <Button
-                    android:id="@+id/change_account_btn"
-                    android:text="@string/change_account_btn"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    style="@style/AccountButtonStyle"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    style="@style/TitleStudentsTableText"
+                    android:text="Отчество:"
+                    android:layout_weight="1"/>
+                <EditText
+                    android:id="@+id/fathername_edit_form"
+                    style="@style/EditTextAccountTable"
+                    android:layout_weight="2"
+                    tools:ignore="TextFields" />
             </TableRow>
             <TableRow>
                 <Button
@@ -151,6 +157,7 @@
                     android:id="@+id/add_account_btn"
                     style="@style/AccountButtonStyle"
                     android:text="@string/add_account_btn"/>
+
                 <Button
                     android:layout_height="wrap_content"
                     android:layout_width="0dp"
