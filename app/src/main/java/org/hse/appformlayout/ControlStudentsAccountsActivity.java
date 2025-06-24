@@ -323,7 +323,7 @@ public class ControlStudentsAccountsActivity extends AppCompatActivity {
         StudentFIOS=new ArrayList<>();
         StudentLogins=new ArrayList<>();
         StudentIds=new ArrayList<>();
-
+        UserIds=new ArrayList<>();
 
         //Делаем запрос на получение списка студентов
         requestBuilder=new Request.Builder().url("https://internship-distribution.hse-perm.ru/api/Student")
